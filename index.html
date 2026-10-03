@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en"><head>
+<meta name="description" content="Independent wireless audio and everyday tech guides. Understand fit, battery life, delivery and returns before you buy.">
+<meta name="theme-color" content="#333333">
+<meta property="og:title" content="6days Tech Finds — Everyday tech. Clearer choices.">
+<meta property="og:description" content="Practical guides to wireless audio and everyday accessories.">
+<meta property="og:type" content="website">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6days Tech Finds</title>
+  
+  <style>
+    :root {
+      --ink: #333333;
+      --muted: #333333;
+      --line: #dedede;
+      --paper: #ffffff;
+      --mist: #f3f3f3;
+      --signal: #333333;
+      --signal-dark: #333333;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background: #ffffff;
+    }
+
+    body {
+      width: 100%;
+      margin: 0;
+      color: var(--ink);
+      font-family: "Source Sans 3", sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid #333333;
+      outline-offset: 4px;
+      border-radius: 3px;
+    }
+
+    .site-shell {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .editorial-width {
+      width: min(100% - 3rem, 1120px);
+      margin-inline: auto;
+    }
+
+    .masthead {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(14px);
+      background: rgba(255, 255, 255, 0.94);
+    }
+
+    .masthead-inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      padding-block: 0.8rem;
+    }
+
+    .site-name {
+      font-family: "DM Sans", sans-serif;
+      font-size: 0.95rem;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .primary-nav,
+    .footer-nav {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.4rem 1.1rem;
+    }
+
+    .primary-nav a,
+    .footer-nav a {
+      color: #333333;
+      font-size: 0.92rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 160ms ease;
+    }
+
+    .primary-nav a:hover,
+    .footer-nav a:hover {
+      color: var(--signal-dark);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .hero {
+      position: relative;
+      isolation: isolate;
+      padding: 6.5rem 0 5.75rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 460px;
+      height: 460px;
+      right: -170px;
+      top: -180px;
+      border: 1px solid rgba(0, 0, 0, 0.22);
+      border-radius: 50%;
+      box-shadow:
+        0 0 0 44px rgba(0, 0, 0, 0.055),
+        0 0 0 88px rgba(0, 0, 0, 0.04),
+        0 0 0 132px rgba(0, 0, 0, 0.025);
+    }
+
+    .hero-content {
+      max-width: 780px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 1.15rem;
+      color: var(--signal-dark);
+      font-family: "DM Sans", sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .hero-title,
+    .section-title,
+    .guide-title {
+      font-family: "Source Serif 4", Georgia, serif;
+      letter-spacing: -0.035em;
+    }
+
+    .hero-title {
+      max-width: 750px;
+      margin: 0;
+      line-height: 0.98;
+    }
+
+    .hero-subheading {
+      max-width: 650px;
+      margin: 1.6rem 0 0;
+      color: #333333;
+      font-size: 1.4rem;
+      line-height: 1.35;
+    }
+
+    .hero-copy {
+      max-width: 630px;
+      margin: 1.2rem 0 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+      line-height: 1.65;
+    }
+
+    .text-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 2rem;
+      color: var(--signal-dark);
+      font-family: "DM Sans", sans-serif;
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 2px solid currentColor;
+      padding-bottom: 0.16rem;
+      transition: color 160ms ease, transform 160ms ease;
+    }
+
+    .text-link::after {
+      content: "↓";
+      font-size: 1.05em;
+    }
+
+    .text-link:hover {
+      color: #333333;
+      transform: translateY(1px);
+    }
+
+    .guide-area {
+      padding: 5.5rem 0 2.5rem;
+    }
+
+    .section-intro {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: 3rem;
+      align-items: end;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-title {
+      margin: 0;
+      line-height: 1.06;
+    }
+
+    .overview-copy {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.06rem;
+      line-height: 1.65;
+    }
+
+    .guide-list {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      padding: 2rem 0 3rem;
+    }
+
+    .guide-card {
+      min-width: 0;
+      padding: 1.65rem 1.55rem 1.75rem;
+      border: 1px solid var(--line);
+      border-top: 4px solid #333333;
+      transition: transform 180ms ease, box-shadow 180ms ease;
+    }
+
+    .guide-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 26px rgba(0, 0, 0, 0.08);
+    }
+
+    .guide-label {
+      display: block;
+      margin-bottom: 1.6rem;
+      color: var(--signal-dark);
+      font-family: "DM Sans", sans-serif;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .guide-title {
+      margin: 0;
+      line-height: 1.12;
+    }
+
+    .guide-card p {
+      margin: 1rem 0 0;
+      color: #333333;
+      font-size: 1rem;
+      line-height: 1.62;
+    }
+
+    .info-band {
+      padding: 5rem 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+      gap: 3rem;
+    }
+
+    .info-band p {
+      max-width: 720px;
+      margin: 0;
+      color: #333333;
+      font-size: 1.08rem;
+      line-height: 1.67;
+    }
+
+    .contact-band {
+      padding: 4.75rem 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .contact-panel {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 2.4rem;
+      border-left: 5px solid var(--signal);
+    }
+
+    .contact-panel p {
+      max-width: 650px;
+      margin: 1rem 0 0;
+      color: #333333;
+      font-size: 1.06rem;
+      line-height: 1.6;
+    }
+
+    .email-link {
+      flex: none;
+      color: var(--signal-dark);
+      font-family: "DM Sans", sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      overflow-wrap: anywhere;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 4px;
+    }
+
+    .disclosure-area {
+      padding: 4.75rem 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .disclosure-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+      gap: 3rem;
+    }
+
+    .disclosure-copy {
+      margin: 0;
+      color: #333333;
+      font-size: 1.08rem;
+      line-height: 1.67;
+    }
+
+    .state-note {
+      margin: 1.25rem 0 0;
+      padding: 1rem 1.15rem;
+      color: #333333;
+      border-left: 3px solid #333333;
+      background: #f3f3f3;
+      font-size: 0.98rem;
+      line-height: 1.5;
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--line);
+      padding: 1.7rem 0 2rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.25rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-meta {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-name {
+      font-family: "DM Sans", sans-serif;
+      font-weight: 700;
+    }
+
+    .footer-copyright {
+      color: #333333;
+      font-size: 0.88rem;
+    }
+
+    @media (max-width: 760px) {
+      .editorial-width {
+        width: min(100% - 2rem, 1120px);
+      }
+
+      .masthead {
+        position: relative;
+      }
+
+      .masthead-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.55rem;
+        padding-block: 1rem;
+      }
+
+      .primary-nav {
+        gap: 0.45rem 0.95rem;
+      }
+
+      .hero {
+        padding: 4.3rem 0 4rem;
+      }
+
+      .hero::after {
+        width: 260px;
+        height: 260px;
+        right: -140px;
+        top: -150px;
+      }
+
+      .hero-subheading {
+        font-size: 1.22rem;
+      }
+
+      .section-intro,
+      .info-grid,
+      .disclosure-grid {
+        grid-template-columns: 1fr;
+        gap: 1.3rem;
+      }
+
+      .guide-area,
+      .info-band,
+      .contact-band,
+      .disclosure-area {
+        padding: 3.7rem 0;
+      }
+
+      .section-intro {
+        padding-bottom: 2rem;
+      }
+
+      .guide-list {
+        grid-template-columns: 1fr;
+        padding: 1.5rem 0 0;
+      }
+
+      .contact-panel {
+        display: block;
+        padding: 1.65rem;
+      }
+
+      .email-link {
+        display: inline-block;
+        margin-top: 1.5rem;
+      }
+    }
+  
+body{font-family:Arial,Helvetica,sans-serif;line-height:1.5}
+.hero-title,.section-title,.guide-title,.site-name,.eyebrow,.text-link,.guide-label,.email-link,.footer-name{font-family:Arial,Helvetica,sans-serif}
+.hero{background:#111;color:#fff}.hero-title{font-size:clamp(2.8rem,7.5vw,5.3rem);font-weight:800;letter-spacing:-.055em;max-width:800px}
+.hero .eyebrow,.hero .hero-copy,.hero .hero-subheading,.hero .text-link{color:#eee}.hero::after{border-color:#555;box-shadow:0 0 0 44px #ffffff08,0 0 0 88px #ffffff05}
+.hero-content{position:relative}.section-title{font-size:clamp(2rem,4vw,2.6rem);font-weight:750}.guide-title{font-size:1.7rem;font-weight:700}.guide-card{border-top-color:#111}
+.site-name{display:flex;align-items:center;gap:.7rem;font-weight:700;font-size:1rem}.brand-mark{width:36px;height:36px;display:grid;place-items:center;background:#111;color:white;border-radius:50%;font-size:27px;font-weight:800}
+section[id],main[id]{scroll-margin-top:90px}.contact-panel{background:#f3f3f3;flex-wrap:wrap}.state-note{background:#f3f3f3;border-left-color:#111}.hero .text-link:hover{color:#fff}
+.skip-link{position:absolute;left:-9999px;top:0;background:white;color:black;z-index:100;padding:1rem}.skip-link:focus{left:1rem}.social-link{display:inline-block;margin:1.5rem 0 0;font-weight:700;text-underline-offset:4px}
+.editorial-note{max-width:750px;margin-top:2rem!important;font-size:1rem!important}a:focus-visible{outline:3px solid currentColor} @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+</style>
+  
+  
+  
+  
+  
+ </head>
+ <body>
+<a class="skip-link" href="#top">Skip to content</a>
+  <div class="site-shell">
+   <header class="masthead ">
+    <div class="editorial-width masthead-inner"><a href="#top" class="site-name"><span class="brand-mark" aria-hidden="true">6</span>6days Tech Finds</a>
+     <nav class="primary-nav" aria-label="Primary navigation"><a href="#guides" class="">Guides</a> <a href="#about" class="">About</a> <a href="#contact" class="">Contact</a> <a href="#disclosure" class="">Disclosure</a>
+     </nav>
+    </div>
+   </header>
+   <main id="top">
+    <section class="hero " aria-labelledby="hero-title">
+     <div class="editorial-width hero-content"><span class="eyebrow ">Independent everyday technology</span>
+      <h1 id="hero-title" class="hero-title ">Everyday tech. Clearer choices.</h1>
+      <p class="hero-subheading ">Practical guides to wireless audio and everyday accessories.</p>
+      <p class="hero-copy ">This project focuses on clear, useful buying guidance for ordinary daily use—so you can compare the details that matter to your routine without unnecessary hype.</p><a href="https://www.facebook.com/profile.php?id=61595181953277" class="social-link">Follow on Facebook ↗</a><br><a href="#guides" class="text-link ">Explore the guides</a>
+     </div>
+    </section>
+    <section id="guides" class="guide-area " aria-labelledby="guides-overview-title">
+     <div class="editorial-width">
+      <div class="section-intro">
+       <div><span class="eyebrow ">A practical starting point</span>
+        <h2 id="guides-overview-title" class="section-title ">Guides for everyday listening</h2>
+       </div>
+       <p class="overview-copy ">A good buying decision starts with your own habits. These guides focus on fit, charging expectations, and the practical checks worth making before you place an order.</p>
+      </div>
+      <div class="guide-list">
+       <article class="guide-card " aria-labelledby="fit-guide-title"><span class="guide-label ">Guide 01</span>
+        <h3 id="fit-guide-title" class="guide-title ">Choose earbuds that fit your routine</h3>
+        <p class="">Many silicone in-ear models seal the ear canal and can feel secure and immersive. Open-ear designs sit outside the canal and may feel more comfortable for people who dislike a sealed fit.</p>
+        <p class="">Comfort, stability, awareness of surroundings, and personal preference all matter. Fit varies by person, so think about when and where you listen rather than assuming one style works for everyone.</p>
+       </article>
+       <article class="guide-card " aria-labelledby="battery-guide-title"><span class="guide-label ">Guide 02</span>
+        <h3 id="battery-guide-title" class="guide-title ">Understand battery life</h3>
+        <p class="">An earbuds battery figure usually describes listening time from the earbuds themselves. A charging case adds extra recharges, which is why the combined total is larger.</p>
+        <p class="">Manufacturer estimates depend on usage, volume, codecs, calls, noise control, and other settings. Real-world results vary, so treat any stated figure as a useful comparison point rather than a guarantee.</p>
+       </article>
+       <article class="guide-card " aria-labelledby="delivery-guide-title"><span class="guide-label ">Guide 03</span>
+        <h3 id="delivery-guide-title" class="guide-title ">Check delivery and returns</h3>
+        <p class="">US buyers should review merchant delivery estimates, stock availability, shipping costs, return windows, condition requirements, warranty information, and the seller’s policy before ordering.</p>
+        <p class="">Availability and policies can change. Verify the relevant details at checkout so you understand the delivery timing and what applies if the item is not right for you.</p>
+       </article>
+      </div>
+     </div>
+    </section>
+    <section id="about" class="info-band " aria-labelledby="about-title">
+     <div class="editorial-width info-grid">
+      <h2 id="about-title" class="section-title ">About</h2>
+      <p class="">6days Tech Finds is an independent content project by 6days of work. Based in Angola, we share practical buying tips for wireless audio and everyday technology, with a focus on US readers.</p>
+     </div>
+    </section>
+    <section id="contact" class="contact-band " aria-labelledby="contact-title">
+     <div class="editorial-width">
+      <div class="contact-panel ">
+       <div>
+        <h2 id="contact-title" class="section-title ">Contact</h2>
+        <p class="">For editorial questions, project feedback, or professional enquiries, please get in touch by email.</p>
+       </div><a href="mailto:icewrldsetimaluz@gmail.com" class="email-link ">icewrldsetimaluz@gmail.com</a>
+      </div>
+     </div>
+    </section>
+    <section id="disclosure" class="disclosure-area " aria-labelledby="disclosure-title">
+     <div class="editorial-width disclosure-grid">
+      <h2 id="disclosure-title" class="section-title ">Disclosure</h2>
+      <div>
+       <p class="disclosure-copy ">Some future links may be affiliate links. If you buy through those links, we may earn a commission at no extra cost to you. Affiliate links will be clearly identified.</p>
+       <p class="state-note ">Product partnerships are being evaluated. No affiliate shopping links are active yet.</p><p class="editorial-note">Our guides explain general buying considerations. Manufacturer specifications will be labelled as such; hands-on experience will only be reported when a product has actually been tested. We do not claim to have personally tested the products discussed in these guides.</p>
+      </div>
+     </div>
+    </section>
+   </main>
+   <footer class="site-footer ">
+    <div class="editorial-width footer-inner">
+     <div class="footer-meta"><span class="footer-name ">6days Tech Finds</span> <span class="footer-copyright ">© 2026 6days of work</span>
+     </div>
+     <nav class="footer-nav" aria-label="Footer navigation"><a href="#guides" class="">Guides</a> <a href="#about" class="">About</a> <a href="#contact" class="">Contact</a> <a href="#disclosure" class="">Disclosure</a>
+     </nav>
+    </div>
+   </footer>
+  </div>
+ 
+</body></html>
